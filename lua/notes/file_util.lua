@@ -95,7 +95,7 @@ function M.create_file(file_name)
     end
   end
   if not is_error then
-    vim.api.nvim_command("normal! :e " .. file .. "\n")
+    vim.api.nvim_command("normal! :belowright split " .. file .. "\n")
     -- a.nvim_out_write(file .. " was properly created\n")
   end
 end
